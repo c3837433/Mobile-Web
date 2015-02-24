@@ -1,0 +1,332 @@
+/* ANGELA SMITH
+Mobile Interfaces and Usability 1310
+PROJECT 4*/
+
+/* Header */
+div #logo {
+	background:none;
+	height: 25px;
+	width:auto;
+	margin: 5px 3px 10px 10px;
+}
+div header {
+	margin: 5px;
+}
+.ui-body-a, .ui-body-b, .ui-body-c {
+	background: url('../images/bikebg.jpg');
+}
+#mainHead {
+	margin: 11px;
+}
+/* Feature */
+.ui-content img {
+	border:none;
+}
+#mainCTA {
+	border: 4px double #7C8243;
+	padding: 0px;
+}
+
+#home .ui-content img {
+	width: 100%;
+	min-height: 120px;
+	max-width: 400px;
+	display: block;
+	margin: 0 auto;
+	background:none;
+}
+.ui-listview-filter .ui-input-search {
+	background: #F0F0F0;
+}
+
+#addRide label {
+	font-weight:700;
+}
+#home h5 {
+	position: absolute;
+    top: 35px;
+   	font-size: 16px;
+    left: 180px;    
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    font-family: "Times New Roman", Arial, sans-serif;
+	text-shadow: 0 1px 0 #333;
+}
+/* Search */
+#home .ui-field-contain {
+	margin: 2px 10px 0px 10px;
+	padding: 0;
+}
+#home .ui-br {
+	border-style: none;
+}
+/* Browse */
+.ui-btn {
+	text-align: left;
+}
+
+.ulStyle {		
+	margin-top: 100px;
+	position: relative;
+}
+
+.groupImg {
+	height: 50px;
+	width: 50px;
+}
+body section p img {
+	height: 100px;
+	width: 100px;
+	margin-top: 30px;
+}
+
+nav a:hover { 
+	background-color: #A2AB58;
+}
+
+div {
+	display: block;
+	overflow: scroll;
+	list-style: none;
+}
+div img {
+	background: url("../images/allTrailIcons.png");
+	height: 50px;
+	width: 50px;
+}
+
+#one {
+	background-size:  255px auto;
+	background-position: 0 0;
+	border: 0;
+} 
+#two { 
+	background-size:  255px auto;
+	background-position: -52px 0;  
+} 
+#three { 
+	background-size:  255px auto;
+	background-position: -104px 0;  
+} 
+#four {
+	background-size:  255px auto;
+	background-position: -154px 0;  
+} 
+#five {
+	background-size:  255px auto;
+	background-position: -205px 0;
+} 
+#six {
+	background-size:  255px auto;
+	background-position: 0 -52px;
+} 
+#seven {
+	background-size:  255px auto;
+	background-position: -52px -52px;
+} 
+#eight {
+	background-size:  255px auto;
+	background-position: -104px -52px;
+}
+#nine {
+	background-size:  255px auto;
+	background-position: -154px -52px;  
+} 
+
+#addTrErrLink {
+	display:none;
+}
+
+.ui-submit-f, .ui-btn-up-f, .ui-btn-active-f, .ui-btn-hover-f, .ui-btn-down-f, .ui-btn-hidden-f, .ui-btn-inner-f {
+	background:rgba(245,241,240,.01);
+	text-decoration: underline;
+	font-weight:600;
+	color:#67BCDB;
+	border: #D0D5C9;
+	padding: 0px;
+	margin:0px;
+	box-shadow: none;
+    text-align: right;
+}
+
+
+label.error {
+	margin: 5px;
+	padding: 5px;
+	color: #CC0000;
+}
+
+#display {
+	padding-bottom: 0px;
+}
+.changeStyle {
+	font-family: "Times New Roman", georgia, sans-serif;
+	display: inline-block;
+	text-decoration: none;
+	border: 2px solid #C0C0C0;
+	background-color: #707070;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 13px;
+	margin-right: 20px;
+	border-radius: 5px;
+	padding: 4px;
+	box-shadow: 
+	inset 1px 1px 20px rgba(0,0,0,0.2),
+	inset -1px -1px 20px rgba(0,0,0,0.2);
+}
+
+fieldset, td { 
+  	padding-top: 0;
+}
+
+.imgDiv {
+	background-color: rgba(245,241,240,.1);
+	clear: both; 
+  	overflow: hidden;
+}
+
+
+legend { 
+	font-size: 20px;
+	letter-spacing: .8px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); 
+	font-family: "Times New Roman", georgia, sans-serif;
+	text-shadow: 0 1px 0 #fff;
+}
+.ui-btn-text {
+	font-family:"Times New Roman", georgia, sans-serif;
+}
+
+.ui-body-c input {
+	font-family:"Times New Roman", georgia, sans-serif;
+}
+
+.modLinks {
+	display: inline-block;
+}
+p {
+	font-size: 14px;
+	margin: 3px 0px;
+	line-height: 15px;
+	padding-bottom: 10px;
+	text-shadow: none;
+
+}
+.ui-li-desc {
+	text-overflow: inherit;
+	overflow: auto;
+	white-space:normal;
+}
+
+section {
+	padding: 45px;
+	font-family: "times new roman", georgia, sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+/* Add Rides and View Rides pages */
+
+form {
+	border: 2px solid #C0C0C0;
+	font-family: "Times New Roman", georgia, sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	padding: 5px;
+}
+#rideForm {
+	background-color: rgba(245,241,240,.8);
+	border-radius: 6px; 
+}
+#items {
+	background-color: rgba(245,241,240,.8);
+	border-radius: 6px;
+	margin:10px;
+	padding: 10px; 
+}
+#errorDiv {
+	background: #DDDDDD;
+	border-radius: 6px; 
+}
+
+
+#dataList {
+	padding-left: 5px;
+	padding-bottom: 10px;
+	border-bottom: 4px solid white;
+}
+
+/* Images */
+#difficulty img {
+	height: 70px;
+	width: 70px;
+	margin: 0px;
+	padding: 0px;
+}
+#conditions img {
+	height: 70px;
+	width: 70px;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#easy {
+	background-size:  345px auto;
+	background-position: 0 0;
+
+}
+#challenge {
+	background-size:  345px auto;
+	background-position: -68px 0;
+	border: 0;
+}
+#awesome {
+	background-size:  345px auto;
+	background-position: -138px 0;
+	border: 0;
+}
+#extreme {
+	background-size:  345px auto;
+	background-position: -207px 0;
+	border: 0;
+}
+#paved {
+	background-size:  345px auto;
+	background-position: 0 -68px;
+
+}
+#stable {
+	background-size:  345px auto;
+	background-position: -68px -68px;
+	border: 0;
+}
+#varied {
+	background-size:  345px auto;
+	background-position: -138px -68px;
+	border: 0;
+}
+#unpred {
+	background-size:  345px auto;
+	background-position: -207px -68px;
+	border: 0;
+}
+
+.ui-li-has-thumb .ui-btn-inner {
+max-height: 70px;
+}
+
+.ui-btn-text {
+position: static;
+max-height: 71px;
+}
+div #logo {
+	background:none;
+	height: 32px;
+	width:auto;
+	margin: 0px 3px 12px 10px;
+}
+

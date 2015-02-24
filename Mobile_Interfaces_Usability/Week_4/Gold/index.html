@@ -1,0 +1,930 @@
+<!-- ANGELA SMITH-->
+<!--Mobile Interfaces and Usability 1310 -->
+<!--PROJECT 4 -->
+
+
+<!doctype html>  
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>My Trail Rides Gold App</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- ClearType for Mobile IE  -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/TrailRides.css"/ data-ajax="false">
+	<link rel="stylesheet" type="text/css" href="css/style.css" data-ajax="false">
+		
+	<!-- JavaScript Modernizr -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+	<!-- Main index page -->
+	<div data-role="page" id="home">
+
+		<div data-role="header" data-position="fixed" data-theme="a">
+			<h1></h1>
+			<img src="images/logo.png" id="logo" class="ui-btn-right">
+		</div>	<!-- End header -->
+
+		<!-- Call to action - Feature -->
+		<div data-role="content" id="mainCTA">
+			<a href="#addRide" class="image"><img src="images/featureCTA.png" /></a>
+			<h5>Take a ride,<br>then add the trail<br>and rate it.</h5>
+		</div>
+
+		<!--Begin Browse categories -->
+		<div data-role="content" data-theme="b" id="mainContent" data-ajax="false">
+			<ul data-role="listview" data-inset="true" data-filter="true" data-theme="b">
+				<li data-role="list-divider" data-theme="b">Browse rides by category...</li>
+				<li><a href="#date">
+					<h2>Date</h2>
+					<p>Sort through rides by date.</p>
+					<span class="ui-li-count">20</span>
+				</a></li>
+				<li><a href="#distance">
+					<h2>Distance</h2>
+					<p>Sort by number of miles</p>
+					<span class="ui-li-count">20</span>
+				</a></li>
+				<li><a href="#difficulty">
+					<h2>Physical Conditions</h2>
+					<p>Browse by trail difficulty level.</p>
+					<span class="ui-li-count">19</span>
+				</a></li>
+				<li><a href="#conditions">
+					<h2>Terrain Conditions</h2>
+					<p>Browse by the terrain condtions for the trail.</p>
+					<span class="ui-li-count">19</span>
+				</a></li>
+				<li><a href="#amenities">
+					<h2>Amenities Available</h2>
+					<p>Find trails that have water or restrooms available.</p>
+					<span class="ui-li-count">22</span>
+				</a></li>
+			</ul>
+		</div>
+		<!--End browse categories   -->
+		<div data-role="footer" data-position="fixed" data-theme="h">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+					<li><a href="#info" id="info" data-icon="info">About</a></li>
+					<li><a href="#news" id="news" data-icon="grid">News Feed</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div>	<!-- End footer -->    	
+	</div> <!-- End main index page -->
+	
+	<!--Begin About App page -->
+	<div data-role="page" id="info" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed" data-theme="a">
+			<img src="images/logo.png" id="logo" class="ui-btn-right">
+			<h1 id="mainHead">My Trail Rides</h1>
+		</div>	<!-- End header -->
+		<div data-role="content" class="browse">
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li data-role="list-divider" data-theme="b">App versions</li>
+				<li>
+					<a href="http://c3837433.github.io/MIU/Week_4/Gold/index.html" data-ajax="false">
+						<h2>Gold App</h2>
+					</a>
+				</li>
+				<li>
+					<a href="http://c3837433.github.io/MIU/Week_4/Bronze/index.html"  data-ajax="false">
+						<h2>Bronze App</h2>						
+					</a>
+				</li>
+
+				<li data-role="list-divider" data-theme="b">GitHub Pages</li>
+				<li>
+					<a href="https://github.com/c3837433/MIU/tree/master/Week_4/Gold" data-ajax="false">
+						<h2>Gold GitHub Page</h2>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/c3837433/MIU/tree/master/Week_4/Bronze" data-ajax="false">
+						<h2>Bronze GitHub Page</h2>
+					</a>
+				</li>
+				<li data-role="list-divider" data-theme="b">About the App</li>
+				<li>
+					<a href="#credits">
+						<h2>Credits</h2>						
+					</a>
+				</li>
+			</ul>
+		</div> <!--End content -->
+		
+		<div data-role="footer" data-position="fixed" data-theme="h">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home"data-iconpos="left">Home</a></li>
+					<li><a href="#info" id="info" data-icon="info" class="ui-btn-active ui-state-persist" >About</a></li>
+					<li><a href="#news" id="news" data-icon="grid">News Feed</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div>	<!-- End footer -->
+	</div> <!--End About App page -->
+
+	<!--Begin News Feed page -->
+	<div data-role="page" id="news" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed" data-theme="a">
+			<img src="images/logo.png" id="logo" class="ui-btn-right">
+			<h1 id="mainHead">News Feed</h1>
+		</div>	<!-- End header -->
+		<div data-role="content" class="browse">
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li data-role="list-divider" data-theme="b">Latest Rides</li>
+				<li>
+					<h2>Monday October 14th, 2013</h2>
+					<h3>Ohio to Erie Trail</h3>
+					<p>Rode 100 miles</p>
+					<p>Water available: Yes</p>
+					<p>Restroom available: Yes</p>
+					<p>Physical Conditions: Challenging</p>
+					<p>Terrain Conditions: Stable</p>
+					<p>Notes: Great way to cross Ohio!</p>
+				</li>
+				<li>
+					<h2>Friday October 11th, 2013</h2>
+					<h3>Cape Cod Rail Trail</h3>
+					<p>Rode 28 miles</p>
+					<p>Water available: No</p>
+					<p>Restroom available: Yes</p>
+					<p>Physical Conditions: An easy ride</p>
+					<p>Terrain Conditions: Paved</p>
+					<p>Notes: Beautiful and smooth ride, great workout.</p>
+				</li>
+				<li>
+					<h2>Saturday September 21st, 2013</h2>
+					<h3>Southern Delaware Heritage Bike Trail</h3>
+					<p>Rode 100 miles</p>
+					<p>Water available: No</p>
+					<p>Restroom available: NO</p>
+					<p>Physical Conditions: Challenging</p>
+					<p>Terrain Conditions: Stable</p>
+					<p>Notes: Hot and dry, runs along beach and roadway.</p>
+				</li>
+				<li>
+					<h2>Wednesday September 11th, 2013</h2>
+					<h3>Greenbrier River Trail</h3>
+					<p>Rode 80 miles</p>
+					<p>Water available: No</p>
+					<p>Restroom available: Yes</p>
+					<p>Physical Conditions: An easy ride</p>
+					<p>Terrain Conditions: Varied</p>
+					<p>Notes: Easy ride with 1% grade, plus fishing and swimming.</p>
+				</li>
+				<li>
+					<h2>Tuesday August 27th, 2013</h2>
+					<h3>Tammany Trace</h3>
+					<p>Rode 31 miles</p>
+					<p>Water available: Yes</p>
+					<p>Restroom available: Yes</p>
+					<p>Physical Conditions: Challenging</p>
+					<p>Terrain Conditions: Varied</p>
+					<p>Notes: Ride through wetlands, conservation, bayou and history.</p>
+				</li>
+			</ul>
+		</div> <!--End content -->
+		
+		<div data-role="footer" data-position="fixed" data-theme="h">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home"data-iconpos="left">Home</a></li>
+					<li><a href="#info" id="info" data-icon="info">About</a></li>
+					<li><a href="#news" id="news" data-icon="grid" class="ui-btn-active ui-state-persist">News Feed</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div>	<!-- End footer -->
+	</div> <!--End newsfeed page -->
+	
+	<!--Begin credits page -->
+	<div data-role="page" id="credits" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<img src="images/logo.png" id="logo" class="ui-btn-right">
+			<h1 id="mainHead">Credits</h1>
+		</div>	<!-- End header -->
+		<div data-inset="true"> <!--Begin content -->
+			<br>
+			<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider" data-theme="b">Images</li>
+					<li>
+						<p>GitHub thumbnails curtesy of <a href="https://github.com/logos">GitHub</a> and used with permission.</p>
+						<p>All other icons, images, and logo's were designed and created by me.</p>
+	
+					</li>
+				<li data-role="list-divider" data-theme="b">Trail Information</li>
+				<li>
+					<p>All trail information can be found at Complex.com's <br><a href="http://www.complex.com/city-guide/2012/05/the-50-best-bike-trails-in-america/">"The 50 Best Bike Trails in America"</a></p>
+				</li>
+			</ul>
+		</div> <!--End content -->	
+		<div data-role="footer" data-position="fixed" data-theme="h">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home"data-iconpos="left">Home</a></li>
+					<li><a href="#info" id="info" data-icon="info" class="ui-btn-active ui-state-persist" >About</a></li>
+					<li><a href="#news" id="news" data-icon="grid">News Feed</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div>	<!-- End footer -->
+	</div> <!--End credits page -->
+		
+	<!-- All Rides by date page -->	
+	<div data-role="page" id="date" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<img src="images/logo.png" id="logo" class="ui-btn-right">
+			<h1 id="mainHead">My Trail Rides</h1>
+		</div> <!-- End header -->
+		<!--Begin one-window drilldown by year -->
+		<div data-role="content" class="browse">
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li data-role="list-divider" data-theme="b">Browse rides by year</li>
+				<li><a href="#y2013">
+					<h2>2013</h2>
+					<span class="ui-li-count">20</span>
+				</a></li>
+				<li><a href="#y2012">
+					<h2>2012</h2>
+				</a></li>
+				<li><a href="#y2011">
+					<h2>2011</h2>
+				</a></li>
+			</ul>
+		</div> <!-- End content -->
+		<div data-role="footer" data-position="fixed" data-theme="h">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home"data-iconpos="left">Home</a></li>
+					<li><a href="#info" id="info" data-icon="info" class="ui-btn-active ui-state-persist" >About</a></li>
+					<li><a href="#news" id="news" data-icon="grid">News Feed</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div>	<!-- End footer -->
+		
+	</div> <!-- End date page -->
+	
+	<!-- All Rides by year page -->	
+	<div data-role="page" id="y2013" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<img src="images/logo.png" id="logo" class="ui-btn-right">
+			<h1 id="mainHead">My Trail Rides</h1>
+		</div> <!-- End header -->
+
+		<!--Begin one-window drilldown by month -->
+		<div data-role="content" class="browse">
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li data-role="list-divider" data-theme="b">Browse rides by month</li>
+				<li><a href="#Jan">
+					<h2>January</h2>
+				</a></li>
+				<li><a href="#Feb">
+					<h2>February</h2>
+				</a></li>
+				<li><a href="#Mar">
+					<h2>March</h2>
+				</a></li>
+				<li><a href="#Apr">
+					<h2>April</h2>
+					<span class="ui-li-count">2</span>
+				</a></li>
+				<li><a href="#May">
+					<span class="ui-li-count">2</span>
+					<h2>May</h2>
+				</a></li>
+				<li><a href="#June">
+					<h2>June</h2>
+				</a></li>
+				<li><a href="#July">
+					<h2>July</h2>
+					<span class="ui-li-count">6</span>
+				</a></li>
+				<li><a href="#August">
+					<h2>August</h2>
+					<span class="ui-li-count">6</span>
+				</a></li>
+				<li><a href="#Sept">
+					<h2>September</h2>
+					<span class="ui-li-count">2</span>
+				</a></li>
+				<li><a href="#Oct">
+					<h2>October</h2>
+					<span class="ui-li-count">2</span>
+				</a></li>
+				<li><a href="#Nov">
+					<h2>November</h2>
+				</a></li>
+				<li><a href="#Dec">
+					<h2>December</h2>
+				</a></li>
+			</ul>
+		</div> <!-- End content -->
+		<div data-role="footer" data-position="fixed" data-theme="h">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home"data-iconpos="left">Home</a></li>
+					<li><a href="#info" id="info" data-icon="info" class="ui-btn-active ui-state-persist" >About</a></li>
+					<li><a href="#news" id="news" data-icon="grid">News Feed</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div>	<!-- End footer -->
+	
+	</div> <!-- End year page -->
+	
+	<!-- All Rides by month page -->	
+	<div data-role="page" id="July" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<img src="images/logo.png" id="logo" class="ui-btn-right">
+			<h1 id="mainHead">My Trail Rides</h1>
+		</div> <!-- End header -->
+
+		<!--Begin one-window drilldown date-year-month-detail page-->
+		<div data-role="content" class="browse">
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li data-role="list-divider" data-theme="b">July Rides</li>
+				<li><a href="#ju1">
+					<h2>July 2, 2013</h2>
+					<p>Medicine Bow Rail-Trail</p>
+				</a></li>
+				<li><a href="#ju2">
+					<h2>July 9, 2013</h2>
+					<p>Des Plaines River Trail</p>
+				</a></li>
+				<li><a href="#ju3">
+					<h2>July 12, 2013</h2>
+					<p>Oklahoma River Trail</p>
+				</a></li>
+				<li><a href="#ju4">
+					<h2>July 17, 2013</h2>
+					<p>Katy Trail</p>
+				</a></li>
+				<li><a href="#ju5">
+					<h2>July 21, 2013</h2>
+					<p>The Arizona Trail</p>
+				</a></li>
+				<li><a href="#ju6">
+					<h2>July 29, 2013</h2>
+					<p>Awa'awapuhiTrail</p>
+				</a></li>
+			</ul>
+		</div> <!-- End content -->
+		<div data-role="footer" data-position="fixed" data-theme="h">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home"data-iconpos="left">Home</a></li>
+					<li><a href="#info" id="info" data-icon="info" class="ui-btn-active ui-state-persist" >About</a></li>
+					<li><a href="#news" id="news" data-icon="grid">News Feed</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div>	<!-- End footer -->
+		
+	</div> <!-- End list by month page -->
+	
+	<!-- All Rides by month page -->	
+	<div data-role="page" id="August" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<img src="images/logo.png" id="logo" class="ui-btn-right">
+			<h1 id="mainHead">My Trail Rides</h1>
+		</div> <!-- End header -->
+
+		<!--Begin one-window drilldown Date-year-August page-->
+		<div data-role="content" class="browse">
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li data-role="list-divider" data-theme="b">August Rides</li>
+				<li><a href="#au1">
+					<h2>August 4, 2013</h2>
+					<p>Prairie Spirit Rail Trail</p>
+				</a></li>
+				<li><a href="#au2">
+					<h2>August 6, 2013</h2>
+					<p>Louisville Riverwalk</p>
+				</a></li>
+				<li><a href="#au3">
+					<h2>August 12, 2013</h2>
+					<p>Great Glen Trails</p>
+				</a></li>
+				<li><a href="#au4">
+					<h2>August 16, 2013</h2>
+					<p>C&amp;O Canal Trail</p>
+				</a></li>
+				<li><a href="#au5">
+					<h2>August 20, 2013</h2>
+					<p>Maah Daah Hey Trail</p>
+				</a></li>
+				<li><a href="#au6">
+					<h2>August 27, 2013</h2>
+					<p>Tammany Trace</p>
+				</a></li>
+			</ul>
+		</div> <!-- End content -->
+		<div data-role="footer" data-position="fixed" data-theme="h">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home"data-iconpos="left">Home</a></li>
+					<li><a href="#info" id="info" data-icon="info" class="ui-btn-active ui-state-persist" >About</a></li>
+					<li><a href="#news" id="news" data-icon="grid">News Feed</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div>	<!-- End footer -->
+		
+	</div> <!-- End list by month page -->
+	
+	<!-- Rides detail ju1 page -->	
+	<div data-role="page" id="ju1" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<img src="images/logo.png" id="logo" class="ui-btn-right">
+			<h1 id="mainHead">My Trail Rides</h1>
+		</div> <!-- End header -->
+
+		<!--Begin one-window drilldown date-year-month-detail page-->
+		<div data-role="content" class="browse">
+			<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider" data-theme="b">Medicine Bow Rail-Trail</li>
+				<li>
+					<p>Date of ride: July 2, 2013</p>
+					<p>Miles ridden: 21</p>
+					<p>Water available: No</p>
+					<p>Restroom available: Yes</p>
+					<p>Physical Conditions: Challenging</p>
+					<p>Terrain Conditions: Varied</p>
+					<p>Notes: Great animal watching, trail is 9,000 ft+. Give time to acclimate.</p>
+				</li>
+			</ul>
+		</div> <!-- End content -->
+		<div data-role="footer" data-position="fixed" data-theme="h">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home"data-iconpos="left">Home</a></li>
+					<li><a href="#info" id="info" data-icon="info" class="ui-btn-active ui-state-persist" >About</a></li>
+					<li><a href="#news" id="news" data-icon="grid">News Feed</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div>	<!-- End footer -->		
+	</div> <!-- End list detail page -->	
+	
+	<!-- Rides detail ju2 page -->	
+	<div data-role="page" id="ju2" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<img src="images/logo.png" id="logo" class="ui-btn-right">
+			<h1 id="mainHead">My Trail Rides</h1>
+		</div> <!-- End header -->
+
+		<!--Begin one-window drilldown date-year-month-detail page-->
+		<div data-role="content" class="browse">
+			<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider" data-theme="b">Des Plaines River Trail</li>
+				<li>
+					<p>Date of ride: July 9, 2013</p>
+					<p>Miles ridden: 31</p>
+					<p>Water available: No</p>
+					<p>Restroom available: No</p>
+					<p>Physical Conditions: Challenging</p>
+					<p>Terrain Conditions: Stable</p>
+					<p>Notes: Mix of roads, rivers, and forests.</p>
+				</li>
+			</ul>
+		</div> <!-- End content -->
+		<div data-role="footer" data-position="fixed" data-theme="h">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home"data-iconpos="left">Home</a></li>
+					<li><a href="#info" id="info" data-icon="info" class="ui-btn-active ui-state-persist" >About</a></li>
+					<li><a href="#news" id="news" data-icon="grid">News Feed</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div>	<!-- End footer -->
+
+	</div> <!-- End list detail page -->
+	
+	<!-- Rides detail ju3 page -->	
+	<div data-role="page" id="ju3" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<img src="images/logo.png" id="logo" class="ui-btn-right">
+			<h1 id="mainHead">My Trail Rides</h1>
+		</div> <!-- End header -->
+
+		<!--Begin one-window drilldown date-year-month-detail page-->
+		<div data-role="content" class="browse">
+			<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider" data-theme="b">Oklahoma River Trail</li>
+				<li>
+					<p>Date of ride: July 12, 2013</p>
+					<p>Miles ridden: 13</p>
+					<p>Water available: No</p>
+					<p>Restroom available: Yes</p>
+					<p>Physical Conditions: An easy ride</p>
+					<p>Terrain Conditions: Paved</p>
+					<p>Notes: Fast city trail free of traffic crossings.</p>
+				</li>
+			</ul>
+		</div> <!-- End content -->
+		<div data-role="footer" data-position="fixed" data-theme="h">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home"data-iconpos="left">Home</a></li>
+					<li><a href="#info" id="info" data-icon="info" class="ui-btn-active ui-state-persist" >About</a></li>
+					<li><a href="#news" id="news" data-icon="grid">News Feed</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div>	<!-- End footer -->
+
+	</div> <!-- End list detail page -->
+
+	<!-- Rides detail ju4 page -->	
+	<div data-role="page" id="ju4" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<img src="images/logo.png" id="logo" class="ui-btn-right">
+			<h1 id="mainHead">My Trail Rides</h1>
+		</div> <!-- End header -->
+
+		<!--Begin one-window drilldown date-year-month-detail page-->
+		<div data-role="content" class="browse">
+			<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider" data-theme="b">Katy Trail</li>
+				<li>
+					<p>Date of ride: July 17, 2013</p>
+					<p>Miles ridden: 100</p>
+					<p>Water available: No</p>
+					<p>Restroom available: No</p>
+					<p>Physical Conditions: An easy ride</p>
+					<p>Terrain Conditions: Paved</p>
+					<p>Notes: Longest rail in America!</p>
+				</li>
+			</ul>
+		</div> <!-- End content -->
+		<div data-role="footer" data-position="fixed" data-theme="h">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home"data-iconpos="left">Home</a></li>
+					<li><a href="#info" id="info" data-icon="info" class="ui-btn-active ui-state-persist" >About</a></li>
+					<li><a href="#news" id="news" data-icon="grid">News Feed</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div>	<!-- End footer -->		
+	</div> <!-- End list detail page -->
+
+	<!-- Rides detail au1 page -->	
+	<div data-role="page" id="au1" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<img src="images/logo.png" id="logo" class="ui-btn-right">
+			<h1 id="mainHead">My Trail Rides</h1>
+		</div> <!-- End header -->
+
+		<!--Begin one-window drilldown date-year-month-detail page-->
+		<div data-role="content" class="browse">
+			<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider" data-theme="b">Prairie Spirit Rail Trail</li>
+				<li>
+					<p>Date of ride: August 4, 2013</p>
+					<p>Miles ridden: 250</p>
+					<p>Water available: Yes</p>
+					<p>Restroom available: Yes</p>
+					<p>Physical Conditions: Challenging</p>
+					<p>Terrain Conditions: Stable</p>
+					<p>Notes: Well-maintained trail. <br>Comes with a small daily fee.</p>
+				</li>
+			</ul>
+		</div> <!-- End content -->
+		<div data-role="footer" data-position="fixed" data-theme="h">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home"data-iconpos="left">Home</a></li>
+					<li><a href="#info" id="info" data-icon="info" class="ui-btn-active ui-state-persist" >About</a></li>
+					<li><a href="#news" id="news" data-icon="grid">News Feed</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div>	<!-- End footer -->		
+	</div> <!-- End list detail page -->	
+		
+	<!-- All Rides by distance page -->	
+	<div data-role="page" id="distance" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<img src="images/logo.png" id="logo" class="ui-btn-right">
+			<h1 id="mainHead">My Trail Rides</h1>
+		</div> <!-- End header -->
+
+		<!--Begin one-window drilldown by miles -->
+		<div data-role="content" class="browse">
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li data-role="list-divider" data-theme="b">Browse rides by number of miles riden</li>
+				<li><a href="#m19">
+					<h2>0 to 19 miles</h2>
+					<span class="ui-li-count">5</span>
+				</a></li>
+				<li><a href="#m40">
+					<h2>20 to 49 miles</h2>
+					<span class="ui-li-count">6</span>
+				</a></li>
+				<li><a href="#m99">
+					<h2>50 to 99 miles</h2>
+					<span class="ui-li-count">3</span>
+				</a></li>
+				<li><a href="#mplus">
+					<h2>100 miles and over</h2>
+					<span class="ui-li-count">6</span>
+				</a></li>
+			</ul>
+		</div> <!-- End content -->
+		<div data-role="footer" data-position="fixed" data-theme="h">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home"data-iconpos="left">Home</a></li>
+					<li><a href="#info" id="info" data-icon="info" class="ui-btn-active ui-state-persist" >About</a></li>
+					<li><a href="#news" id="news" data-icon="grid">News Feed</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div>	<!-- End footer -->
+		
+	</div> <!-- End distance page -->
+	
+	<!-- Physical Difficulty page -->
+	<div data-role="page" id="difficulty" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<img src="images/logo.png" id="logo" class="ui-btn-right">
+			<h1 id="mainHead">My Trail Rides</h1>
+		</div> <!-- End header -->
+
+		<!--Begin one-window drilldown by miles -->
+		<div data-role="content" class="browse">
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li data-role="list-divider" data-theme="b">Browse rides physical difficulty level</li>
+				<li><a href="#easy">
+					<img id="easy">
+					<h2>An easy ride</h2>
+					<p>Rides that require little exertion.</p>
+					<span class="ui-li-count">8</span>
+				</a></li>
+				<li><a href="#challenge">
+					<img id="challenge">
+					<h2>Challenging</h2>
+					<p>Rides that will break a sweat and get your heart pumping.</p>
+					<span class="ui-li-count">8</span>
+				</a></li>
+				<li><a href="#awesome">
+					<img id="awesome">
+					<h2>Technically awesome</h2>
+					<p>Heart pumping rides that push you out of your comfort zone.</p>
+					<span class="ui-li-count">2</span>
+				</a></li>
+				<li><a href="#extreme">
+					<img id="extreme">
+					<h2>Extreme</h2>
+					<p>A fast paced adrenalin rush requiring quick reflexes and a whole lot of nerve.</p>
+					<span class="ui-li-count">1</span>
+				</a></li>
+			</ul>
+		</div> <!-- End content -->
+		<div data-role="footer" data-position="fixed" data-theme="h">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home"data-iconpos="left">Home</a></li>
+					<li><a href="#info" id="info" data-icon="info" class="ui-btn-active ui-state-persist" >About</a></li>
+					<li><a href="#news" id="news" data-icon="grid">News Feed</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div>	<!-- End footer -->
+		
+	</div> <!-- End date page -->
+	<!-- End physically sorted rides page -->
+	
+	<!-- Terrain conditions page -->
+	<div data-role="page" id="conditions" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<img src="images/logo.png" id="logo" class="ui-btn-right">
+			<h1 id="mainHead">My Trail Rides</h1>
+		</div> <!-- End header -->
+
+		<!--Begin one-window drilldown by miles -->
+		<div data-role="content" class="browse">
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li data-role="list-divider" data-theme="b">Browse rides terrain condition </li>
+				<li><a href="#paved">
+					<img id="paved">
+					<h2>Paved Terrain</h2>
+					<p>Smooth even pavement.</p>
+					<span class="ui-li-count">8</span>
+				</a></li>
+				<li><a href="#stable">
+					<img id="stable">
+					<h2>Stable Terrain</h2>
+					<p>Dirt roads and unpaved tracks.</p>
+					<span class="ui-li-count">8</span>
+				</a></li>
+				<li><a href="#varied">
+					<img id="varied">
+					<h2>Varied Terrain</h2>
+					<p>Forests and fields, rocks and roads. </p>
+					<span class="ui-li-count">2</span>
+				</a></li>
+				<li><a href="#unpred">
+					<img id="unpred">
+					<h2>Unpredictable terrain</h2>
+					<p>Pathless mixes of anything and everything.</p>
+					<span class="ui-li-count">1</span>
+				</a></li>
+			</ul>
+		</div> <!-- End content -->
+		<div data-role="footer" data-position="fixed" data-theme="h">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home"data-iconpos="left">Home</a></li>
+					<li><a href="#info" id="info" data-icon="info" class="ui-btn-active ui-state-persist" >About</a></li>
+					<li><a href="#news" id="news" data-icon="grid">News Feed</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div>	<!-- End footer -->
+		
+	</div>  <!-- End terrain conditions sorted page page -->
+	
+	<!-- Amenities conditions page -->
+	<div data-role="page" id="amenities" data-add-back-btn="true" data-theme="c">
+		<div data-role="header" data-position="fixed">
+			<img src="images/logo.png" id="logo" class="ui-btn-right">
+			<h1 id="mainHead">My Trail Rides</h1>
+		</div> <!-- End header -->
+
+		<!--Begin one-window drilldown by amenities -->
+		<div data-role="content" class="browse">
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li data-role="list-divider" data-theme="b">Browse rides by amenities.</li>
+				<li><a href="#water">
+					<h2>Water</h2>
+					<p>Rides where water is available.</p>
+					<span class="ui-li-count">8</span>
+				</a></li>
+				<li><a href="#restroom">
+					<h2>Restrooms</h2>
+					<p>Rides where restrooms are available.</p>
+					<span class="ui-li-count">14</span>
+				</a></li>
+			</ul>
+		</div> <!-- End content -->
+		<div data-role="footer" data-position="fixed" data-theme="h">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home"data-iconpos="left">Home</a></li>
+					<li><a href="#info" id="info" data-icon="info" class="ui-btn-active ui-state-persist" >About</a></li>
+					<li><a href="#news" id="news" data-icon="grid">News Feed</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div>	<!-- End footer -->
+		
+	</div>  <!-- End amenities sorted page page -->
+	
+	<!-- Begin add-a-ride page -->
+	<div data-role="page" id="addRide" data-add-back-btn="true"> 
+
+		<div data-role="header"> <!-- Begin header -->
+			<img src="images/logo.png" id="logo" class="ui-btn-right">
+			<h1 id="mainHead">Add a Ride!</h1>
+			<div data-role="navbar"> <!-- Begin navbar -->
+				<ul>
+					<li><a href="#addRide" id="addRide" data-icon="plus" data-theme="g" class="ui-btn-active ui-state-persist">Add a ride</a></li>
+					<li><a href="#display" id="display" data-icon="grid" data-theme="g">View Rides</a></li>
+					<li><a href="#clear" id="clear" data-icon="delete" data-theme="g" class="ui-btn-up-g">Delete All</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div> <!-- End header -->			
+		<div data-role="content"> <!-- Begin main content -->
+				
+			<form action="" id="rideForm" >
+				<div data-role="fieldcontain"> <!-- Begin General Information  -->
+					<legend>General Ride Information</legend>
+					<p>* Indicates Required Fields</p>
+					<div> <!-- Begin Trail Name  -->
+						<label for="trailName">*Name of Ride Location </label>
+						
+						<input type="text" name="trailName" id="trailName" placeholder="River Hills Trail"class="required" data-clear-btn="true" data-theme="g">
+						<p>Enter where the ride took place.</p>
+						
+					</div> <!-- End Trail Name -->
+					<div> <!-- Begin Trail Date  -->
+						<label for="date">*Date of Ride </label>
+						<input type="date" name="date" id="when" class="required date" data-clear-btn="true" data-theme="g">
+						<p>Please enter the date the ride took place.</p>
+					</div> <!-- End Ride Date -->
+					<div>
+						<!-- Begin Ride Distance  -->
+						<label for="distance">Length of ride </label>
+						<input type="range" name="distance" id="miles" value="5" min="0" max="100"data-theme="g">
+						<p>Enter or choose the number of miles this ride was.</p>
+					</div> <!-- End Ride Distance -->
+				</div> <!-- End General Information -->
+					
+				<div data-role="fieldcontain"> <!-- Begin Ride Specifics  -->
+					<legend>Trail Information</legend>
+					<div> <!-- Begin Trail Ratings  -->
+						<label for="physicalGroup">Select Trail Ratings </label>
+						<select name="physicalGroup" id="physicalGroup" data-native-menu="false" data-theme="b">
+							<option data-placeholder="true" value="Unknown">Select Difficulty Level</option>
+							<option value="An easy ride.">An easy ride.</option>
+							<option value="A good challenge.">A good challenge.</option>
+							<option value="Technically awesome.">Technically awesome.</option>
+							<option value="An extreme ride.">An extreme ride.</option>
+						</select>
+						<select name="terrainGroup" id="terrainGroup" data-native-menu="false" data-theme="b">
+							<option data-placeholder="true" value="Unknown">Select Terrain Condition</option>
+							<option value="Smooth, paved surface.">Smooth, paved surface.</option>
+							<option value="Hard-packed stable surface.">Hard-packed stable surface.</option>
+							<option value="Varied terrain.">Varied terrain.</option>
+							<option value="Unpredictable terrain.">Unpredictable terrain.</option>
+						</select>
+						<p>Select appropriate physical difficulty level, then select condition of ride terrain.</p>
+					</div> <!-- End Trail Ratings -->
+					<div> <!-- Begin trail amenity  -->
+						<label for="">Amenities Available </label>
+						<fieldset data-role="controlgroup" data-theme="g">
+							<input type="checkbox"  name="water" id="water">
+							<label for="water">Water</label>
+							<input type="checkbox"  name="restroom" id="restroom">
+							<label for="restroom">Restrooms</label>								
+						</fieldset>
+						<p>Click to choose which amenities were available for this ride.</p>
+					</div> <!-- End amenities available -->
+					<div> <!-- Begin notes -->
+						<label for="">Add trail notes </label>
+						<textarea id="notes" placeholder="Great animal watching, trail is 9,000 ft+. Give time to acclimate." data-theme="g"></textarea>
+						<p>Enter here any notes about the ride such as location information, equipment used, etc.</p>
+													
+					</div> <!-- End notes -->
+					<div class="ui-grid-a"> <!-- Begin done button -->
+						<div class="ui-block-a">
+							<input type="submit" value="Add Ride" data-icon="check" iconpos="left" data-theme="e">
+						</div>
+						<div class="ui-block-b" id="cancel">
+							<input type="reset" value="Reset" data-theme="f" data-shadow="false" data-corners="false">
+						</div>
+					</div> <!-- End buttons -->
+					<a href="#addRideErrors" id="addTrErrLink" data-rel="dialog" >Open Errors</a>								</div> <!-- End ride specifics -->
+			</form>				
+		</div> <!-- End main content -->
+		<div data-role="footer" data-position="fixed" data-theme="h">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home">Home</a></li>
+					<li><a href="#info" data-ajax="false" id="info" data-icon="info">About</a></li>
+					<li><a href="#news" id="news" data-icon="grid">News Feed</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div>	<!-- End footer --> 		
+	</div> <!-- end add-a-ride page -->
+
+	<!-- Begin display page -->
+	<div data-role="page" id="display" data-add-back-btn="true"> 
+		<div data-role="header" data-position="fixed"> <!-- Begin header -->
+			<img src="images/logo.png" id="logo" class="ui-btn-right">
+			<h1>Saved Rides</h1>
+			<div data-role="navbar" data-theme="h"> <!-- Begin navbar -->
+				<ul>
+					<li><a href="#addRide" id="addRide" data-icon="plus" data-theme="g">Add a ride</a></li>
+					<li><a href="#display" id="display" data-icon="grid" data-theme="g" class="ui-btn-active ui-state-persist">View Rides</a></li>
+					<li><a href="#clear" id="clear" data-icon="delete" data-theme="g" class="ui-btn-up-g">Delete All</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div> <!-- End header -->			
+		<div data-role="content" id="items"> <!-- Begin main content -->
+
+		</div> <!-- End main content -->
+		<div data-role="footer" data-position="fixed" data-theme="h">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-icon="home">Home</a></li>
+					<li><a href="#info" data-ajax="false" id="info" data-icon="info">About</a></li>
+					<li><a href="#news" id="news" data-icon="grid">News Feed</a></li>
+				</ul>
+			</div> <!-- End navbar -->
+		</div>	<!-- End footer --> 
+	</div> <!-- End display page -->
+	
+	<!-- Begin error dialog -->
+	<div data-role="dialog" id="addRideErrors"> 
+		<div data-role="header" data-position="fixed"> <!-- Begin header -->
+			<h1>Missing Fields</h1>
+		</div> <!-- End header -->
+		<div data-role="content" id="errorDiv">	<!-- Begin dialog content -->
+			<ul>
+				<li>Test</li>
+			</ul>
+		</div> <!-- End dialog content -->
+	</div> <!-- End add ride dialog -->
+	
+	
+	<!-- JavaScript Order= Libraries, addons, then custom script files. -->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	<script src="js/libs/jquery.validate.min.js" type="text/javascript"></script>
+	<script src="js/json.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+
+</body>
+</html>

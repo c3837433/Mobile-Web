@@ -1,0 +1,114 @@
+/*
+Title: Trail App Styles
+By: Angela Smith
+Project 2 VFW
+*/
+a {
+	font-family: "times new roman", georgia, sans-serif;
+	padding: 20px;
+}
+
+div {
+	font-family: "times new roman", georgia, sans-serif;
+	padding: 5px;
+	padding-bottom: 10px;
+	background-color: rgba(245,241,240,.8);
+	display: block;
+	overflow: scroll;
+}
+
+fieldset, td { 
+  padding-top: 0;
+}
+
+footer {
+	padding: 12px;
+	background-color: #67BCDB;
+	border: 2px solid #C0C0C0;
+}
+
+form {
+	background-color: #A2AB58;
+	border: 2px solid #C0C0C0;
+	font-family: "times new roman", georgia, sans-serif;
+	font-size: 1.1em;
+	line-height: 30px;
+	padding: 5px;
+	list-style: none;
+}
+
+header {
+	border: 2px solid #C0C0C0;
+	background-color: #E44424;
+	font-family: fantasy,"times new roman", georgia, sans-serif;
+	padding: 15px;
+	padding-left: 30px;
+	color: #FFFFFF;
+}
+
+html { 
+  background: url(img/bikebg.jpg) no-repeat right bottom fixed; 
+  background-size: cover;
+  opacity:0.8;
+}
+
+input {
+	background-color: rgba(245,241,240,.8);
+	border-radius: 5px;
+}
+
+legend { 
+	font-family: fantasy;
+	font-weight: bold;
+	font-size: 1.2em;
+	letter-spacing: .8px;
+	padding-top: 10px;
+	padding-bottom: 10px; 
+}
+
+p {
+	font-size: 1.3em;
+	padding-top: 20px;
+}
+
+section {
+	padding: 45px;
+	font-family: "times new roman", georgia, sans-serif;
+}
+
+.bgBox {
+	border: 2px solid #C0C0C0;
+	background-color: rgba(245,241,240,.8);
+	font-family: "times new roman", georgia, sans-serif;
+	text-align: center;
+}
+
+span {
+	color: #000000;
+	font-style: italic;
+}
+
+ul {
+	list-style: none;
+}
+
+.ulStyle {
+	list-style: square;
+}
+#current {
+border-radius:4px;
+width: 20px;
+height: 20px;
+padding-top: 2px; padding-bottom:8px;
+background-color: #67BCDB;
+border: 2px solid #C0C0C0;
+text-align:center;
+color:#ffffff;
+font-size: medium;
+margin-left:65px;
+}
+
+#slider {
+margin-left:10px;
+background-color: #A2AB58;
+}

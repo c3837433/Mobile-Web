@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- ANGELA SMITH -->
+<!--Mobile Interfaces and Usability 1310 -->
+<!--PROJECT 2-->
+
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="description" content="Mountain Biking Trail Guide Form"/>
+		<meta name="keywords" content="mountain biking, trail, ride"/>
+		<meta name="robots" content="index, follow"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="HandheldFriendly" content="true"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>My Trail Guide Form</title>
+	</head>
+	<body>
+		<header>
+			<h1>Add a Trail Ride</h1>
+				<nav class="clearfix">
+					<a href="index.html" id="home">Home</a>
+					<a href="#" id="display">View rides</a>
+					<a href="#" id="clear">Clear trails</a>
+					<a href="additem.html" id="addTrail" style="display:none;">Add a new Trail</a>
+					<a href="search.html" id="search" style="display:none;">Search Trails</a>
+				</nav>
+		</header>	
+		<form action="#" method="post" id="trailForm"> 
+			<fieldset id="rideFieldset">
+				<legend>Ride Information</legend>
+					<ul id="errors"></ul>
+					<ul>
+						<li><label for="trailName"><span>*</span>Name of Trail: </label><input type="text" id="trailName" /></li>
+						<li><label for="date"><span>*</span>Date of Ride: </label><input type="date" id="date"></li>
+					</ul>
+					<div id="slider"><label for="distance">Number of Miles: </label><br>0 <input id="distance" type="range" min="0" max="50"/>50</li>
+					<div id="current" style="display: inline;">25</div>
+			</fieldset>
+			<fieldset id="trailFieldset">
+				<legend>Trail Information</legend>
+					<ul id="addForm">
+						<li id="selectOptions"><label for="physicalGroup">Trail Ratings:</label></li>
+					</ul>
+					<ul id="amenityBoxes">
+						<li>Trail Amenities</li>
+						<li><input type="checkbox" id="checkbox1" value="Yes" name="amenities" /><label for="checkbox1">Restrooms available</label></li>
+						<li><input type="checkbox" id="checkbox2" value="Yes" name="amenities" /><label for="checkbox2">Water available</label></li>
+						<li><label for="notes">Notes about trail: </label><input type="text" id="notes"></li>
+						<li><input type="submit" value="Submit Trail" id="submit"></li>
+					</ul>
+			</fieldset>
+			<footer>
+				<nav>
+					<a href="additem.html" id="addTrail" style="display:none;">Add a new Trail</a>
+				</nav>
+			</footer>
+		</form>
+		<script src="js/json.js" type="text/javascript"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+	</body>
+</html>

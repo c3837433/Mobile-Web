@@ -1,0 +1,10 @@
+{
+  "env": {
+    "local": {
+      "db": "http://127.0.0.1:5984/asdmydreams"
+    },
+    "cloudant": {
+      "db": "https://angessmith:sakleijj@angessmith.cloudant.com/dreams" 
+    }
+  }
+}

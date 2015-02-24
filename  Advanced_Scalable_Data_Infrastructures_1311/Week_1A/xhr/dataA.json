@@ -1,0 +1,37 @@
+[
+    {
+        "title": ["Title: ","Alabama"],
+        "date": ["Date: ","2013-08-01"],
+        "keys": ["Keys: ","Pecans"],
+        "recurring": ["Recurring: ","No"],
+        "meaning": ["Meaning: ","not sure"]
+    },
+    {
+        "title": ["Title: ","Alaska"],
+        "date": ["Date: ","2013-08-01"],
+        "keys": ["Keys: ","White snow"],
+        "recurring": ["Recurring: ","No"],
+        "meaning": ["Meaning: ","not sure"]
+    },
+    {
+        "title": ["Title: ","Arizona"],
+        "date": ["Date: ","2013-08-01"],
+        "keys": ["Keys: ","Sun and heat"],
+        "recurring": ["Recurring: ","No"],
+        "meaning": ["Meaning: ","not sure"]
+    },
+    {
+        "title": ["Title: ","Arkansas"],
+        "date": ["Date: ","2013-08-01"],
+        "keys": ["Keys: ","Diamonds"],
+        "recurring": ["Recurring: ","No"],
+        "meaning": ["Meaning: ","not sure"]
+    },
+    {
+        "title": ["Title: ","California"],
+        "date": ["Date: ","2013-08-01"],
+        "keys": ["Keys: ","Surfing"],
+        "recurring": ["Recurring: ","No"],
+        "meaning": ["Meaning: ","not sure"]
+    }
+]

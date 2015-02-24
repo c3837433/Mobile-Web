@@ -1,0 +1,444 @@
+/* ANGELA SMITH
+Mobile Interfaces and Usability 1310
+PROJECT 2*/
+
+/* Header */
+#home .ui-header {
+	background: #E44424;}
+
+/* Feature */
+
+#home .ui-content img {
+	width: 85%;
+	min-height: 100px;
+	max-width: 400px;
+	display: block;
+	margin: 0 auto;
+	background:none;
+}
+#home .ui-content {
+	background: url('../images/bikebg.jpg');
+	padding: 5px;
+}
+.browse {
+	background: #F5F3EE;
+}
+#home h5 {
+	position: absolute;
+    top: 35px;
+    left: 171px;    
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    font-family: Helvetica, Arial, sans-serif;
+	text-shadow: 0 1px 0 #000;
+}
+/* Search */
+#home .ui-field-contain {
+	margin: 2px 10px 0px 10px;
+	padding: 0;
+}
+#home .ui-br {
+	border-style: none;
+}
+/* Browse */
+.ui-btn {
+	text-align: left;
+}
+
+.ulStyle {		
+	margin-top: 100px;
+	position: relative;
+}
+
+.groupImg {
+	height: 50px;
+	width: 50px;
+}
+
+}
+html { 
+  	background: url('../images/bikebg.jpg') no-repeat right bottom fixed; 
+  	background-size: cover;
+}
+body section p img {
+	height: 100px;
+	width: 100px;
+	margin-top: 30px;
+}
+
+
+
+nav a:hover { 
+	background-color: #A2AB58;
+}
+
+div {
+	background-color: rgba(245,241,240,.8);
+	display: block;
+	overflow: scroll;
+}
+div img {
+	background: url("../images/allTrailIcons.png");
+	height: 50px;
+	width: 50px;
+}
+
+#one {
+	background-size:  255px auto;
+	background-position: 0 0;
+	border: 0;
+} 
+#two { 
+	background-size:  255px auto;
+	background-position: -52px 0;  
+} 
+#three { 
+	background-size:  255px auto;
+	background-position: -104px 0;  
+} 
+#four {
+	background-size:  255px auto;
+	background-position: -154px 0;  
+} 
+#five {
+	background-size:  255px auto;
+	background-position: -205px 0;
+} 
+#six {
+	background-size:  255px auto;
+	background-position: 0 -52px;
+} 
+#seven {
+	background-size:  255px auto;
+	background-position: -52px -52px;
+} 
+#eight {
+	background-size:  255px auto;
+	background-position: -104px -52px;
+}
+#nine {
+	background-size:  255px auto;
+	background-position: -154px -52px;  
+} 
+#errors {
+	color: #E44424;
+	font-size: .9em;
+}
+
+.changeStyle {
+	font-family: "times new roman", georgia, sans-serif;
+	display: inline-block;
+	text-decoration: none;
+	border: 2px solid #C0C0C0;
+	background-color: #707070;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 13px;
+	margin-right: 20px;
+	border-radius: 5px;
+	padding: 4px;
+	box-shadow: 
+	inset 1px 1px 20px rgba(0,0,0,0.2),
+	inset -1px -1px 20px rgba(0,0,0,0.2);
+}
+
+fieldset, td { 
+  	padding-top: 0;
+}
+
+footer {
+	padding: 12px;
+	background-color: #67BCDB;
+	border: 1px solid #C0C0C0;
+	box-shadow: 
+	inset 1px 1px 20px rgba(0,0,0,0.2),
+	inset -1px -1px 20px rgba(0,0,0,0.2);
+}
+
+form {
+	background-color: #A2AB58;
+	border: 2px solid #C0C0C0;
+	font-family: "times new roman", georgia, sans-serif;
+	font-size: 1.1em;
+	line-height: 30px;
+	padding: 5px;
+	list-style: none;
+	box-shadow:
+	inset 1px 1px 84px rgba(0,0,0,0.2),
+	inset -1px -1px 84px rgba(0,0,0,0.2);
+}
+
+
+.imgDiv {
+	background-color: rgba(245,241,240,.1);
+	clear: both; 
+  	overflow: hidden;
+}
+header {
+	border: 5px double #C0C0C0;
+	background-color: #E44424;
+	font-family: fantasy,"times new roman", georgia, sans-serif;
+	padding: 15px 0;
+	padding-left: 30px;
+	color: #FFFFFF;
+	box-shadow: 
+	inset 1px 1px 84px rgba(0,0,0,0.2),
+	inset -1px -1px 84px rgba(0,0,0,0.2);
+	text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.4);
+}
+
+header a {
+	font-family: "times new roman", georgia, sans-serif;
+	border: 2px solid #C0C0C0;
+	background-color: #707070;
+	color: #FFFFFF;
+	margin-right: 15px;
+	border-radius: 2px;
+	margin: 0 auto;
+	height: 40px;
+	float: left;
+	padding: 0px 6px;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+	box-shadow: 
+	inset 1px 1px 20px rgba(0,0,0,0.2),
+	inset -1px -1px 20px rgba(0,0,0,0.2);
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+.clearfix:before,  
+.clearfix:after {  
+    content: " ";  
+    display: table;  
+}  
+.clearfix:after {  
+    clear: both;  
+}  
+.clearfix {  
+    *zoom: 1;  
+} 
+
+input {
+	height: 18px;
+	background-color: rgba(245,241,240,.8);
+	border-radius: 5px;
+}
+
+legend { 
+	font-family: fantasy;
+	color: #FFFFFF;
+	font-size: 1.2em;
+	letter-spacing: .8px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4); 
+}
+
+.modLinks {
+	display: inline-block;
+}
+p {
+	font-size: 1.3em;
+
+}
+
+section {
+	padding: 45px;
+	font-family: "times new roman", georgia, sans-serif;
+}
+
+.bgBox {
+	border: 2px solid #C0C0C0;
+	background-color: #F5F3EE;
+	font-family: fantasy,"times new roman", georgia, sans-serif;
+	text-align: center;
+	box-shadow: 
+	inset 2px 1px 80px rgba(0,0,0,0.24),
+	inset -2px -1px 80px rgba(0,0,0,0.24);
+}
+
+span {
+	color: #000000;
+	font-style: italic;
+}
+
+#submit {
+	font-family: fantasy,"times new roman", georgia, sans-serif;
+	height: 30px;
+	border-radius:4px;
+	padding: 5px;
+	background-color: #E44424;
+	color:#ffffff;
+	font-size: medium;
+	margin:25px 50px 5px 80px;
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+ul {
+	list-style: none;
+}
+form span {
+	color: #E44424;
+	font-size: .7em;
+	vertical-align: 15%;
+}
+
+.liStyle {
+	list-style: none;
+	border-bottom: 4px solid white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.ulStyle {
+	list-style: square;
+	padding-left: 5px;
+}
+
+#current {
+	border-radius:4px;
+	width: 35px;
+	height: 20px;
+	padding-bottom:5px;
+	background-color: #67BCDB;
+	border: 2px solid #C0C0C0;
+	text-align:center;
+	color:#ffffff;
+	font-size: medium;
+	margin-left:20px;
+	box-shadow: 
+	inset 1px 1px 8px rgba(0,0,0,0.2),
+	inset -1px -1px 8px rgba(0,0,0,0.2);
+}
+
+#slider {
+	margin-left: 40px;
+	margin-right: 30px;
+	background-color:rgba(162,171,88,.1);
+  	clear: both; 
+  	overflow: hidden;
+}
+#difficulty img {
+	height: 70px;
+	width: 70px;
+	margin: 0px;
+	padding: 0px;
+}
+#conditions img {
+	height: 70px;
+	width: 70px;
+	margin: 0px;
+	padding: 0px;
+}
+#info img {
+	height: 83px;
+	width: 83px;
+	margin: 0px;
+	padding: 0px;
+}
+.ui-block-a {
+	text-align:center;
+}
+.ui-block-b {
+	text-align:center;
+}
+#info h3 {
+	margin-top: 4px;
+}
+
+
+#easy {
+	background-size:  345px auto;
+	background-position: 0 0;
+
+}
+#challenge {
+	background-size:  345px auto;
+	background-position: -68px 0;
+	border: 0;
+}
+#awesome {
+	background-size:  345px auto;
+	background-position: -138px 0;
+	border: 0;
+}
+#extreme {
+	background-size:  345px auto;
+	background-position: -207px 0;
+	border: 0;
+}
+#paved {
+	background-size:  345px auto;
+	background-position: 0 -68px;
+
+}
+#stable {
+	background-size:  345px auto;
+	background-position: -68px -68px;
+	border: 0;
+}
+#varied {
+	background-size:  345px auto;
+	background-position: -138px -68px;
+	border: 0;
+}
+#unpred {
+	background-size:  345px auto;
+	background-position: -207px -68px;
+	border: 0;
+}
+#gold {
+	background-size:  695px auto;
+	background-position: -520px -85px;
+	border: 0;
+}
+#bronze {
+	background-size:  695px auto;
+	background-position: -430px -85px;
+	border: 0;
+}
+#goldGH {
+	background-size:  700px auto;
+	background-position: -433px 3px;
+	border: 0px;
+}
+#bronzeGH {
+	background-size:  930px auto;
+	background-position: -695px 7px;
+}
+#me {
+	background-size:  695px auto;
+	background-position: -1303px -85px;
+}
+#credits {
+	background-size:  695px auto;
+	background-position: -1303px -1px;
+}
+#meBig {
+	height: 100px;
+	width: 100px;
+	background-size:  830px auto;
+	background-position: -1556px -101px;
+	float:right;
+}
+.ui-li-has-thumb .ui-btn-inner {
+	max-height: 70px;
+}
+
+.ui-btn-text {
+	position: static;
+	max-height: 71px;
+}
+#info p {
+	font-size: 12px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+.ui-bar-c {
+	border: none;
+}
+#info h3 {
+	margin-bottom: 4px;
+}

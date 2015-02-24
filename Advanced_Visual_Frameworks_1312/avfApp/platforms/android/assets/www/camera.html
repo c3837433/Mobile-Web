@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Advanced Visual Frameworks 1312 -->
+<!-- Angela Smith -->
+<!-- Week 3 -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+            <title>Demo App</title>
+            
+            <!-- Stylesheets -->
+            <link rel="stylesheet" type="text/css" href="css/jquery.theme.css" />
+            <link rel="stylesheet" type="text/css" href="css/style.css" />
+            
+            <!-- javascript Files -->
+            <script type="text/javascript" src="js/jquery.js"></script>
+            <script type="text/javascript" src="js/jquery.mobile.js"></script>
+            <script type="text/javascript" src="js/jquery.couch.js"></script>
+            </head>
+    <body>
+        <!-- Begin camera page -->
+        <section data-role="page" id="camera" data-add-back-btn="true">
+            <header data-role="header"> <!-- Begin Header -->
+                <h1>Demo <span>Application</span></h1>
+                <p>Angela Smith  |  AVF 1312</p>
+            </header> <!-- End Header -->
+            <section data-role="content"> <!-- Begin  content -->
+                <h1>Capture</h1>
+                <input type="submit" id="getPhoto" value="Capture Photo">
+                    </section> <!-- End content -->
+            <div id="shot">
+                
+            </div>
+            <footer data-role="footer" data-position="fixed"> <!-- Begin footer -->
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="index.html" data-ajax="false">Home</a></li>
+                        <li><a href="#info">Info</a></li>
+                    </ul>
+                </nav>
+            </footer> <!-- End footer -->
+        </section>
+        <!-- End camera Page -->
+        
+        <!-- javascript Files -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        
+    </body>
+</html>

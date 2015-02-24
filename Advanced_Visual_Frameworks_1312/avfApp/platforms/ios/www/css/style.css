@@ -1,0 +1,152 @@
+/*
+Advanced Visual Frameworks 1312
+Angela Smith
+Week 2
+ */
+section {
+    height: 100%;
+}
+/* Grid */
+#mainNav .ui-block-a:not(.ui-btn), .ui-block-b:not(.ui-btn),.ui-block-c,.ui-block-d {
+    background-image: linear-gradient(#fff,#f2f2f2);
+    border: 1px solid #ccc;
+}
+/* Listview */
+#home .ui-link p {
+    padding-left: .1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.ui-li-aside {
+    display: inline;
+    padding-right: 8px;
+}
+
+#resultsInst p {
+    overflow-wrap: break-word;
+}
+
+.ui-li {
+    border-top: 1px solid #ffffff;
+    height: 50px;
+    color: #666666;
+}
+
+.ui-li-desc {
+    color: #666666;
+}
+
+#resultsInst h2 {
+    color: #fbb03b;
+    text-shadow: 0 -1px 0 #666666;
+    font-weight: normal;
+    display: inline;
+    -webkit-margin-before: 1.1em;
+    padding-left: 8px;
+}
+
+#resultsInst li {
+    border: 4px solid #ffffff;
+}
+/* Background */
+section[data-role="page"] {
+    background: linear-gradient(207deg, #6c6c6c 2px, transparent 10px) 10px 0px,
+        linear-gradient(38deg, #6d6d6d 4px, transparent 9px),
+        linear-gradient(65deg, #4b4b4b 4px, transparent 9px),
+        linear-gradient(#666666 30%, #4b4b4b 40%, transparent 50%, #6c6c6c 60%, transparent 80%, #6a6a6a);
+    background-color: #666666;
+    background-size: 10px 10px;
+}
+
+section[data-role="content"], section[data-role="collapsible-set"] {
+    background: rgba(245,241,240,.8);
+}
+
+/* Header */
+.ui-bar-a {
+    text-align: center;
+    background: #fbb03b;
+    padding: 0 0 .5em 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+.ui-bar-a p {
+    margin: 0;
+    font-family: Myriad Pro;
+    text-shadow: 0 -1px 0 #666666;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.ui-header .ui-title {
+    padding-top: .8em;
+    padding-bottom: .3em;
+    font-family: Gabriola;
+    font-size: 2.2em;
+    text-shadow: 0 -1px 0 #666666;
+    margin: 0;
+    font-weight: normal;
+}
+
+.ui-header .ui-title span {
+    color: #666666;
+    font-weight: normal;
+}
+/* footer */
+footer .ui-btn {
+    height: 4em;
+}
+
+.ui-navbar li .ui-btn .ui-btn-inner {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1.2em;
+}
+
+.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit {
+    padding-left: 55px;
+    padding-top: 23px;
+}
+
+/* Media Queries */
+/* iPad landscape */
+@media all and (orientation: landscape) {
+    #inst {
+        width: 97%;
+        border: solid 1em #ffffff;
+    }
+
+    #home .ui-link {
+        padding-left: 4em;
+    }
+}
+/* iPad portrait */
+@media all and (orientation: portrait) {
+    #inst {
+        width: 96%;
+        border: solid 1em #ffffff;
+    }
+
+    #home .ui-link {
+        padding-left: 7.9em;
+    }
+}
+
+@media all and (max-width: 50em) {
+    .my-breakpoint .ui-block-a {
+        width: 50%;
+    }
+
+    .my-breakpoint .ui-block-b {
+        width: 50%;
+    }
+
+    .my-breakpoint .ui-block-c {
+        width: 50%;
+    }
+
+    .my-breakpoint .ui-block-d {
+        width: 50%;
+    }
+}

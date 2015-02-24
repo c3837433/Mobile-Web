@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<dreams>
+    <dream>
+        <title>One</title>
+        <date>2013-09-24</date>
+        <keys>Sun and Moon</keys>
+        <recurring>No</recurring>
+        <meaning>Not sure</meaning>
+    </dream>
+    <dream>
+        <title>Two</title>
+        <date>2013-10-15</date>
+        <keys>Butterflies</keys>
+        <recurring>No</recurring>
+        <meaning>Not sure</meaning>
+    </dream>
+    <dream>
+        <title>Three</title>
+        <date>2013-10-18</date>
+        <keys>Sun and Moon</keys>
+        <recurring>Yes</recurring>
+        <meaning>Not sure</meaning>
+    </dream>
+        <dream>
+        <title>Four</title>
+        <date>2013-11-03</date>
+        <keys>Monkeys</keys>
+        <recurring>No</recurring>
+        <meaning>Not sure</meaning>
+    </dream>
+    <dream>
+        <title>Five</title>
+        <date>2013-11-05</date>
+        <keys>Lots of food</keys>
+        <recurring>No</recurring>
+        <meaning>Not sure</meaning>
+    </dream>
+</dreams>

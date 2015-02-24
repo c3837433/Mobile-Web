@@ -1,0 +1,68 @@
+<!-- ANGELA SMITH-->
+<!--Advanced Scalable Data Infrastructures 1311 -->
+<!--Week 4 -->
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>My Dreams</title>	
+</head>
+<body>
+	<div id="main">
+			<section data-role="page" id="addDream" data-add-back-btn="true"> <!-- Begin Add a dream Page -->
+			<header data-role="header" data-theme="b">
+				<h1>Add a Dream</h1>
+				<img src="logo.png" class="ui-btn-right"/>
+			</header>
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-icon="home">Home</a></li>
+					<li><a href="#addDream" data-icon="plus" class="ui-btn-active ui-state-persist">Add Dream</a></li>
+					<li><a href="#getDreams" data-icon="grid">View Dreams</a></li>
+				</ul>
+			</nav>				
+			<section data-role="content"><!-- Begin Form -->
+				<form id="addDreamForm" action="">
+					<fieldset>
+						<legend>Dream Information</legend>
+						<div>
+							<label for="title">Title:</label>
+							<input type="text" id="title" placeholder="Walking up water." data-clear-btn="true" class="required">
+							<p>Enter a 2-4 word title.</p>
+						</div>
+						<div>
+							<input type="hidden" value="" id="dreamId"> 
+							<label for="date">Date: </label>
+							<input type="date" name="date" id="date" class="required date">
+							<p>Please enter the date the dream took place.</p>
+						</div> 
+						<div>
+							<label for="keys">Dream keys:</label>
+							<input type="text" id="keys" placeholder="Everything was dry.">
+							<p>Enter key features that stood out in the dream.</p>
+						</div>
+						<div>
+							<fieldset>
+								<label for="recurring">Recurring dream?</label>
+								<select name="recurring" id="recurring" data-role="slider">
+									<option value="Nonrecurring">No</option>
+									<option value="Recurring">Yes</option>
+								</select>
+								<p>Does this dream have a recurring theme?</p>
+							</fieldset>	
+						</div>
+						<div>Possible interpretation:</label>
+							<textarea id="meaning"></textarea>
+							<p>Enter what you think the dream means.</p>							
+							<input type="submit" id="submit" value="Add Dream!" data-theme="b"></input>	
+						</div> <!-- End buttons -->
+					</fieldset> <!-- End fieldset -->	
+				</form> <!-- End form -->	
+			</section> <!-- End Browse content -->
+			<footer data-role="footer">
+			</footer>
+		</section> <!-- End Add a dream Page -->
+		
+	</div> <!-- End "main" div -->
+</body>
+</html>

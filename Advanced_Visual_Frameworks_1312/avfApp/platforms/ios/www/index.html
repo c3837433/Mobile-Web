@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!-- Advanced Visual Frameworks 1312 -->
+<!-- Angela Smith -->
+<!-- Week 3 -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+            <title>Demo App</title>
+            
+            <!-- Stylesheets -->
+            <link rel="stylesheet" type="text/css" href="css/jquery.theme.css" />
+            <link rel="stylesheet" type="text/css" href="css/style.css" />
+            
+            <!-- javascript Files -->
+            <script type="text/javascript" src="js/jquery.js"></script>
+            <script type="text/javascript" src="js/jquery.mobile.js"></script>
+            </head>
+    <body>
+        <!-- Begin Home Page -->
+        <section data-role="page" id="home">
+            <!-- Begin Header -->
+            <header data-role="header">
+                <h1>Demo <span>Application</span></h1>
+                <p>Angela Smith  |  AVF 1312</p>
+            </header>
+            <!-- End Header -->
+            <!-- Begin list section -->
+            <section data-role="content" id="mainNav">
+                <div class="ui-grid-c my-breakpoint">
+                    <div class="ui-block-a">
+                        <a href="#geo">
+                            <img src="img/geo.png" alt="geolocation">
+                            <p>GEOLOCATION</p>
+                        </a>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#notify">
+                            <img src="img/compass.png" alt="compass">
+                            <p>NOTIFICATIONS</p>
+                        </a>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#contacts">
+                            <img src="img/contacts.png" alt="contacts">
+                            <p>CONTACTS</p>
+                        </a>
+                    </div>
+                    <div class="ui-block-d">
+                        <a href="#connect" data-ajax="false">
+                            <img src="img/accel.png" alt="accelerometer">
+                            <p>CONNECTION</p>
+                        </a>
+                    </div>
+                    <div class="ui-block-a">
+                        <a href="#camera" data-ajax="false">
+                            <img src="img/camera.png" alt="camera">
+                            <p>CAPTURE</p>
+                        </a>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#instagram">
+                            <img src="img/instagram.png" alt="instagram">
+                            <p>INSTAGRAM API</p>
+                        </a>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#weather">
+                            <img src="img/weather.png" alt="weather">
+                            <p>WEATHER API</p>
+                        </a>
+                    </div>
+                    <div class="ui-block-d">
+                        <a href="#research">
+                            <img src="img/research.png" alt="research">
+                            <p>RESEARCH</p>
+                        </a>
+                    </div>
+                </div><!-- End grid-d -->
+            </section>
+            <!-- End main nav grid section -->
+            <!-- Begin footer -->
+            <footer data-role="footer" data-position="fixed">
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#" class="ui-btn-active ui-btn-persist">Home</a></li>
+                        <li><a href="#info">Info</a></li>
+                    </ul>
+                </nav>
+            </footer>
+            <!-- End footer -->
+        </section>
+        <!-- End Home Page -->
+        <!-- Begin Instagram API page -->
+        <section data-role="page" id="instagram" data-add-back-btn="true">
+            <!-- Begin Header -->
+            <header data-role="header">
+                <h1>Demo <span>Application</span></h1>
+                <p>Angela Smith  |  AVF 1312</p>
+            </header> <!-- End Header -->
+            <!-- Begin form and list section -->
+            <section data-role="content">
+                <form>
+                    <div>
+                        <label for="location">Search by tag:</label>
+                        <input type="text" id="tag" placeholder="Dreams" data-clear-btn="true" class="required">
+                            <p>Enter the tag you would like to search by.</p>
+                            </div>
+                    <div>
+                        <input type="submit" id="getImages" value="Search Instagram">
+                            </div>
+                </form>
+                <ul data-role="listview" data-inset="true" id="resultsInst">
+                </ul>
+            </section><!-- End list section -->
+            <footer data-role="footer" data-position="fixed"><!-- Begin footer -->
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#info">Info</a></li>
+                    </ul>
+                </nav>
+            </footer><!-- End footer -->
+        </section>
+        <!-- End Instagram Page -->
+        <!-- Begin weather API page -->
+        <section data-role="page" id="weather" data-add-back-btn="true">
+            <header data-role="header"> <!-- Begin Header -->
+                <h1>Demo <span>Application</span></h1>
+                <p>Angela Smith  |  AVF 1312</p>
+            </header> <!-- End Header -->
+            <section data-role="content" id="lookup"> <!-- Begin form section -->
+                <h2>Get the current weather information</h2>
+                <form> <!-- Begin form -->
+                    <section> <!-- Begin location -->
+                        <label for="location">Search by City:</label>
+                        <input type="text" id="location" placeholder="Paris, France" data-clear-btn="true" class="required">
+                            <p>Enter the name or a major city to search.</p>
+                            <div> <!-- Begin submit -->
+                                <input type="submit" id="getWeath" value="Lookup Weather">
+                            </div> <!-- End submit -->
+                            </section> <!-- End location -->
+                    <section>
+                        <h3>OR</h3>
+                    </section>
+                    <section>
+                        <label for="location">Search this Location:</label>
+                        <input type="submit" id="getLocation" value="Get Current Location">
+                            <p>Search will use your current GPS coordinates.</p>
+                            </section>
+                </form> <!-- End form -->
+            </section> <!-- End form section -->
+            <section data-role="content">  <!-- Begin results section -->
+                <ul data-role="listview" data-inset="true" id="resultsWea">
+                </ul>
+                <input type="reset" id="reset" value="Search a New Location">
+                    </section> <!-- End results section -->
+            <footer data-role="footer" data-position="fixed"> <!-- Begin footer -->
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#info">Info</a></li>
+                    </ul>
+                </nav>
+            </footer> <!-- End footer -->
+        </section>
+        <!-- End weather Page -->
+    	<!-- Begin Research Page -->
+    	<section data-role="page" id="research" data-add-back-btn="true">
+    		<header data-role="header"> <!-- Begin Header -->
+    			<h1>Demo <span>Application</span></h1>
+    			<p>Angela Smith  |  AVF 1312</p>
+    		</header> <!-- End Header -->
+            <section data-role="collapsible-set" id="dynaList"> <!-- Begin Research Information -->
+            	<h4>Research</h4>
+    		</section> <!-- End collapsable article -->
+            <footer data-role="footer" data-position="fixed"> <!-- Begin footer -->
+    			<nav data-role="navbar">
+    				<ul>
+    					<li><a href="#home">Home</a></li>
+    					<li><a href="#info">Info</a></li>
+    				</ul>
+    			</nav>
+    		</footer> <!-- End footer -->
+    	</section>
+        <!-- End Research Page -->
+        <!-- Begin info page -->
+        <section data-role="page" id="info" data-add-back-btn="true">
+            <header data-role="header"> <!-- Begin Header -->
+                <h1>Demo <span>Application</span></h1>
+                <p>Angela Smith  |  AVF 1312</p>
+            </header> <!-- End Header -->
+            <section data-role="content"> <!-- Begin  content -->
+                <h1>Demo App Information</h1>
+                <h2>Instagram</h2>
+                <p>All images and data on the Instagram page has been pulled from the <a href="http://instagram.com/developer">Instagram API</a>.<p>
+                <h2>Weather</h2>
+                <p>Weather data curtesy of <a href="http://www.wunderground.com/weather/api/">Weather Underground</a> and the API used will pull weather data by location or through the use of GPS.</p>
+            </section> <!-- End content -->
+            <footer data-role="footer" data-position="fixed"> <!-- Begin footer -->
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#" class="ui-btn-active ui-btn-persist">Info</a></li>
+                    </ul>
+                </nav>
+            </footer> <!-- End footer -->
+        </section>
+        <!-- End info Page -->
+        <!-- Begin Geolocation page -->
+        <section data-role="page" id="geo" data-add-back-btn="true">
+            <header data-role="header"> <!-- Begin Header -->
+                <h1>Demo <span>Application</span></h1>
+                <p>Angela Smith  |  AVF 1312</p>
+            </header> <!-- End Header -->
+            <section data-role="content"> <!-- Begin  content -->
+                <h1>Geolocation</h1>
+                <input type="submit" id="getGeo" value="Get Coordinates">
+                    <section id="locPoints">
+                    </section>
+                    </section> <!-- End content -->
+            <footer data-role="footer" data-position="fixed"> <!-- Begin footer -->
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#info">Info</a></li>
+                    </ul>
+                </nav>
+            </footer> <!-- End footer -->
+        </section>
+        <!-- End geolocation Page -->
+        <!-- Begin Connection page -->
+        <section data-role="page" id="connect" data-add-back-btn="true">
+            <header data-role="header"> <!-- Begin Header -->
+                <h1>Demo <span>Application</span></h1>
+                <p>Angela Smith  |  AVF 1312</p>
+            </header> <!-- End Header -->
+            <section data-role="content"> <!-- Begin  content -->
+                <h1>Connection</h1>
+                <input type="submit" id="getConType" value="Discover Device's Connection">
+                    <section id="addCon">
+                    </section>
+                    </section> <!-- End content -->
+            <footer data-role="footer" data-position="fixed"> <!-- Begin footer -->
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#info">Info</a></li>
+                    </ul>
+                </nav>
+            </footer> <!-- End footer -->
+        </section>
+        <!-- End Connection Page -->
+        <!-- Begin Notification page -->
+        <section data-role="page" id="notify" data-add-back-btn="true">
+            <header data-role="header"> <!-- Begin Header -->
+                <h1>Demo <span>Application</span></h1>
+                <p>Angela Smith  |  AVF 1312</p>
+            </header> <!-- End Header -->
+            <section data-role="content"> <!-- Begin  content -->
+                <h1>Notification</h1>
+                <input type="submit" id="notAlert" value="Get Notifcation">
+            </section> <!-- End content -->
+            <footer data-role="footer" data-position="fixed"> <!-- Begin footer -->
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#info">Info</a></li>
+                    </ul>
+                </nav>
+            </footer> <!-- End footer -->
+        </section>
+        <!-- End Notification Page -->
+        <!-- Begin compass page -->
+        <section data-role="page" id="compass" data-add-back-btn="true">
+            <header data-role="header"> <!-- Begin Header -->
+                <h1>Demo <span>Application</span></h1>
+                <p>Angela Smith  |  AVF 1312</p>
+            </header> <!-- End Header -->
+            <section data-role="content"> <!-- Begin  content -->
+                <h1>Compass</h1>
+                <input type="submit" id="getDir" value="Get Heading">
+                    </section> <!-- End content -->
+            <section id="headResults">
+            </section>
+            <footer data-role="footer" data-position="fixed"> <!-- Begin footer -->
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#info">Info</a></li>
+                    </ul>
+                </nav>
+            </footer> <!-- End footer -->
+        </section>
+        <!-- End compass Page -->
+        <!-- Begin contacts page -->
+        <section data-role="page" id="contacts" data-add-back-btn="true">
+            <header data-role="header"> <!-- Begin Header -->
+                <h1>Demo <span>Application</span></h1>
+                <p>Angela Smith  |  AVF 1312</p>
+            </header> <!-- End Header -->
+            <section data-role="content"> <!-- Begin  content -->
+                <h1>Contacts</h1>
+                <input type="submit" id="searchContacts" value="Search Contacts">
+            </section> <!-- End content -->
+            <footer data-role="footer" data-position="fixed"> <!-- Begin footer -->
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#info">Info</a></li>
+                    </ul>
+                </nav>
+            </footer> <!-- End footer -->
+        </section>        <!-- End contacts Page -->
+        <section data-role="page" id="accel" data-add-back-btn="true"> <!-- Begin accelerometer page -->
+            <header data-role="header"> <!-- Begin Header -->
+                <h1>Demo <span>Application</span></h1>
+                <p>Angela Smith  |  AVF 1312</p>
+            </header> <!-- End Header -->
+            <section data-role="content"> <!-- Begin  content -->
+                <h1>Accelerometer</h1>
+                <input type="submit" id="getMovement" value="Start Device Movement">
+                <input type="submit" id="stopMove" value="Stop Device Movement">
+            </section> <!-- End content -->
+            <section id="currMovement">
+            </section>
+            <footer data-role="footer" data-position="fixed"> <!-- Begin footer -->
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#info">Info</a></li>
+                    </ul>
+                </nav>
+            </footer> <!-- End footer -->
+        </section>
+        <!-- End accelerometer Page -->
+        <!-- Begin camera page -->
+        <section data-role="page" id="camera" data-add-back-btn="true">
+            <header data-role="header"> <!-- Begin Header -->
+                <h1>Demo <span>Application</span></h1>
+                <p>Angela Smith  |  AVF 1312</p>
+            </header> <!-- End Header -->
+            <section data-role="content"> <!-- Begin  content -->
+                <h1>Capture</h1>
+                <input type="submit" id="getPhoto" value="Capture Photo">
+                    </section> <!-- End content -->
+            <div id="shot">
+                
+            </div>
+            <footer data-role="footer" data-position="fixed"> <!-- Begin footer -->
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#info">Info</a></li>
+                    </ul>
+                </nav>
+            </footer> <!-- End footer -->
+        </section>
+        <!-- End camera Page -->
+        
+        <!-- javascript Files -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        
+    </body>
+</html>

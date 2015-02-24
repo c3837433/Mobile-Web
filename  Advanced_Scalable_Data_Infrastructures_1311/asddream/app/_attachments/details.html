@@ -1,0 +1,36 @@
+<!-- ANGELA SMITH-->
+<!--Advanced Scalable Data Infrastructures 1311 -->
+<!--Week 4 -->
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>My Dreams</title>	
+</head>
+<body>
+	<div id="main">
+		<section data-role="page" id="details"> <!-- Begin Home Page -->
+			<header data-role="header" data-theme="b">
+				<h1>Dream Details</h1>
+				<img src="logo.png" class="ui-btn-right"/>
+			</header>
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-icon="home">Home</a></li>
+					<li><a href="#addDream" data-icon="plus">Add Dream</a></li>
+					<li><a href="#getDreams" data-icon="grid" class="ui-btn-active ui-state-persist">View Dreams</a></li>
+				</ul>
+			</nav>			
+			<section data-role="content"> <!-- Begin add dream selection -->
+				<ul id="dynaDetail" data-role="listview">
+				</ul>
+			</section> <!-- End selection -->
+			<section data-role="content">
+				<input type="button" value="Edit" id="editDream" data-inline="true" data-theme="b"/>
+				<input type="button" value="Delete" id="deleteDream"data-inline="true" data-theme="c"/>
+			</section>
+			
+		</section> <!-- End details Page -->
+	</div> <!-- End "main" div -->
+</body>
+</html>
